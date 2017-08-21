@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="GisApp" lang="en">
+
+<head>
+    <title>Gis App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
+</head>
+
+<body ng-cloak layout="column">
+
+    <!-- Container #1 -->
+    <md-toolbar layout="row" class="md-toolbar-tools">
+        <md-button class="menu md-icon-button" hide-gt-sm ng-click="app.toggleList();" aria-label="Mostrar lista de usuarios">
+            <md-icon md-svg-icon="menu"></md-icon>
+        </md-button>
+        <h1>Gis App</h1>
+    </md-toolbar>
+
+    <!-- Container VIEW -->
+    <div flex layout="row" ui-view="content">
+        <style>
+            html,
+            body,
+            div[ui-view] {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                height: 100%;
+                margin: 0;
+                justify-content: center;
+            }
+        </style>
+
+    </div>
+
+</body>
+
+<!-- <body ng-cloak layout="column" ng-controller="AppController as app">
+
+    <!-- Container #1 --
+    <md-toolbar layout="row" class="md-toolbar-tools">
+        <md-button class="menu md-icon-button" hide-gt-sm ng-click="app.toggleList();" aria-label="Mostrar lista de usuarios">
+            <md-icon md-svg-icon="menu"></md-icon>
+        </md-button>
+        <h1>Gis App</h1>
+    </md-toolbar>
+
+    <!-- Container #2 -
+    <div flex layout="row">
+
+        <!-- Container #3 --
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left" ng-click="app.toggleList();" class="md-whiteframe-4dp">
+            <users-list users="app.users" selected="app.selected" on-selected="app.selectUser(user);">
+            </users-list>
+        </md-sidenav>
+
+        <!-- Container #4 --
+        <md-content flex id="content">
+            <!-- User details sample --
+            <user-details selected="app.selected">
+            </user-details>
+
+        </md-content>
+    </div>
+</body> -->
+
+
+
+
+<script src="app.bundle.js"></script>
+
+</html>

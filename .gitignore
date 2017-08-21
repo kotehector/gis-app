@@ -1,0 +1,8 @@
+.DS_Store
+npm-debug.log
+dist/
+.tmp
+app.yaml
+.history
+
+node_modules/

@@ -1,0 +1,41 @@
+<div flex layout="column">
+    <!-- <public-menu flex="none" layout></public-menu> -->
+
+    <!-- Container #2 -->
+    <div flex layout="row">
+
+        <!-- Container #3 -->
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left" ng-click="app.toggleList();" class="md-whiteframe-4dp">
+            <!-- <users-list users="app.users" selected="app.selected" on-selected="app.selectUser(user);">
+            </users-list> -->
+            <md-list>
+                <!-- List Item #1 -->
+                <md-list-item>
+                    <md-button ng-click="" ng-class="{'selected' : user === $ctrl.selected }">
+                        <md-icon md-svg-icon=""></md-icon>
+                        Zoom
+                    </md-button>
+                </md-list-item>
+                <!-- List Item #2 -->
+                <md-list-item>
+                    <md-button ng-click="" ng-class="{'selected' : user === $ctrl.selected }">
+                        <md-icon md-svg-icon=""></md-icon>
+                        Mover
+                    </md-button>
+                </md-list-item>
+                <!-- List Item #3 -->
+                <md-list-item>
+                    <md-button ng-click="" ng-class="{'selected' : user === $ctrl.selected }">
+                        <md-icon md-svg-icon=""></md-icon>
+                        Cargar Capas
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+
+        <!-- Container #4 -->
+        <md-content flex id="content">
+            <div id="mapid"></div>
+        </md-content>
+    </div>
+</div>
